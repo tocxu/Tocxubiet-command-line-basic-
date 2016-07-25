@@ -63,26 +63,39 @@ xóa thư  mục hiện hành mà trong đó thư mục hiện hành có thể c
 >gunzip
 
 * Lệnh thêm một thiết bị
->mount <dev/ten_thiet_bi> <vi_tri_mount>
->umount
+> mount <dev/ten_thiet_bi> <vi_tri_mount>
+> umount
 
 * Tạo người dùng
->useradd ten
->passwd ten
+> useradd ten
+> passwd ten
 
 * Tạo nhóm
->groupadd ten_nhom
+> groupadd ten_nhom
 
 Thêm tài khoản vào nhóm
->usermod -g <tên_nhóm><tài_khoản>
+> usermod -g <tên_nhóm><tài_khoản>
 
 * Lệnh tạo tập tin
->touch <đường_dẫn> <tập_tin>
->vim <path> <file>
+> touch <đường_dẫn> <tập_tin>
+> vim <path> <file>
 
+#How to check an software is installed on ubuntu
+> dpkg --get-selections | grep ten-goi
 
+> dpkg --get-selectioins | grep mysql
 
+#Clean
 
+> echo "Cleaning Up" && 
 
+> sudo apt-get -f install && 
+
+> sudo apt-get autoremove && 
+
+> sudo apt-get -y autoclean && 
+
+> sudo apt-get -y clean
+ 
 
 
